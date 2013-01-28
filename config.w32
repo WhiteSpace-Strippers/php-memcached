@@ -5,13 +5,13 @@ ARG_WITH('memcached', 'libmemcached extension', 'no');
 
 if (PHP_MEMCACHED == "yes") {
 
-  if (!CHECK_LIB("memcached.lib", "memcached", PHP_MEMCACHED)) { 
+	if (!CHECK_LIB("memcached.lib", "memcached", PHP_MEMCACHED)) {
 	ERROR("memcached: library 'memcached' not found");
-  }
-  
-  if (!CHECK_HEADER_ADD_INCLUDE("libmemcached/memcached.h", "CFLAGS_MEMCACHED")) {
+	}
+
+	if (!CHECK_HEADER_ADD_INCLUDE("libmemcached/memcached.h", "CFLAGS_MEMCACHED")) {
 	ERROR("memcached: header 'libmemcached/memcached.h' not found");
-  }
-  EXTENSION("memcached", "memcached.c");
-  AC_DEFINE("HAVE_MEMCACHED", 1, "memcached support");
+	}
+	EXTENSION("memcached", "memcached.c");
+	AC_DEFINE("HAVE_MEMCACHED", 1, "memcached support");
 }

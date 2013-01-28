@@ -11,7 +11,7 @@
  * documentation for such software.
  *
  * THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED
- * WARRANTY.  IN PARTICULAR, NEITHER THE AUTHOR NOR LUCENT MAKES ANY
+ * WARRANTY.	IN PARTICULAR, NEITHER THE AUTHOR NOR LUCENT MAKES ANY
  * REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
  * OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
  *
@@ -22,9 +22,9 @@
  *	char buf[32];
  */
 
-/* Modified for use with php in the memcached client  extension.
+/* Modified for use with php in the memcached client	extension.
  *
- *        // Teddy Grenman <teddy.grenman@iki.fi>, 2010-05-18.
+ *				// Teddy Grenman <teddy.grenman@iki.fi>, 2010-05-18.
  */
 
 #include <zend_operators.h>

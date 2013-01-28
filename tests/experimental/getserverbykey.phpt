@@ -26,34 +26,34 @@ bool(false)
 bool(false)
 A BAD KEY WAS PROVIDED/CHARACTERS OUT OF RANGE
 array(%d) {
-  ["host"]=>
-  string(%d) "%s"
-  ["port"]=>
-  int(%d)
-  ["weight"]=>
-  int(1)
+	["host"]=>
+	string(%d) "%s"
+	["port"]=>
+	int(%d)
+	["weight"]=>
+	int(1)
 }
 array(%d) {
-  ["host"]=>
-  string(%d) "%s"
-  ["port"]=>
-  int(%d)
-  ["weight"]=>
-  int(1)
+	["host"]=>
+	string(%d) "%s"
+	["port"]=>
+	int(%d)
+	["weight"]=>
+	int(1)
 }
 array(%d) {
-  ["host"]=>
-  string(%d) "%s"
-  ["port"]=>
-  int(%d)
-  ["weight"]=>
-  int(1)
+	["host"]=>
+	string(%d) "%s"
+	["port"]=>
+	int(%d)
+	["weight"]=>
+	int(1)
 }
 array(%d) {
-  ["host"]=>
-  string(%d) "%s"
-  ["port"]=>
-  int(%d)
-  ["weight"]=>
-  int(1)
+	["host"]=>
+	string(%d) "%s"
+	["port"]=>
+	int(%d)
+	["weight"]=>
+	int(1)
 }

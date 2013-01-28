@@ -1,17 +1,17 @@
 /*
-  +----------------------------------------------------------------------+
-  | Copyright (c) 2009-2010 The PHP Group                                |
-  +----------------------------------------------------------------------+
-  | This source file is subject to version 3.01 of the PHP license,      |
-  | that is bundled with this package in the file LICENSE, and is        |
-  | available through the world-wide-web at the following url:           |
-  | http://www.php.net/license/3_01.txt.                                 |
-  | If you did not receive a copy of the PHP license and are unable to   |
-  | obtain it through the world-wide-web, please send a note to          |
-  | license@php.net so we can mail you a copy immediately.               |
-  +----------------------------------------------------------------------+
-  | Authors: Andrei Zmievski <andrei@php.net>                            |
-  +----------------------------------------------------------------------+
+	+----------------------------------------------------------------------+
+	| Copyright (c) 2009-2010 The PHP Group																|
+	+----------------------------------------------------------------------+
+	| This source file is subject to version 3.01 of the PHP license,			|
+	| that is bundled with this package in the file LICENSE, and is				|
+	| available through the world-wide-web at the following url:					 |
+	| http://www.php.net/license/3_01.txt.																 |
+	| If you did not receive a copy of the PHP license and are unable to	 |
+	| obtain it through the world-wide-web, please send a note to					|
+	| license@php.net so we can mail you a copy immediately.							 |
+	+----------------------------------------------------------------------+
+	| Authors: Andrei Zmievski <andrei@php.net>														|
+	+----------------------------------------------------------------------+
 */
 
 #include <stdlib.h>
@@ -53,7 +53,7 @@ static int php_memc_sess_lock(memcached_st *memc, const char *key TSRMLS_DC)
 	long lock_wait = MEMC_G(sess_lock_wait);
 	time_t expiration;
 	memcached_return status;
-	/* set max timeout for session_start = max_execution_time.  (c) Andrei Darashenka, Richter & Poweleit GmbH */
+	/* set max timeout for session_start = max_execution_time.	(c) Andrei Darashenka, Richter & Poweleit GmbH */
 
 	lock_maxwait = zend_ini_long(ZEND_STRS("max_execution_time"), 0);
 	if (lock_maxwait <= 0) {
@@ -62,7 +62,7 @@ static int php_memc_sess_lock(memcached_st *memc, const char *key TSRMLS_DC)
 	if (lock_wait == 0) {
 		lock_wait = MEMC_SESS_DEFAULT_LOCK_WAIT;
 	}
-	expiration  = time(NULL) + lock_maxwait + 1;
+	expiration	= time(NULL) + lock_maxwait + 1;
 	attempts = (unsigned long)((1000000.0 / lock_wait) * lock_maxwait);
 
 	/* Set the number of write retry attempts to the number of replicas times the number of attempts to remove a server */

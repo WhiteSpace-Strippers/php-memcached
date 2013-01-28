@@ -3,7 +3,7 @@ persistent memcached connection
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 $m1 = new Memcached('id1');
 $m1->setOption(Memcached::OPT_PREFIX_KEY, 'php');
 var_dump($m1->getOption(Memcached::OPT_PREFIX_KEY));

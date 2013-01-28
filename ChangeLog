@@ -26,23 +26,23 @@ Version 2.0.0b2
 	* Improve session support:
 		- Add support for libmemcached config string
 		- Add persistence support via PERSISTENT=persistent_id prefix
-		  of the save_path
+			of the save_path
 	* Add 3rd parameter to the __construct() that allows specification
-	  of libmemcached configuration string
+		of libmemcached configuration string
 	* Fix a possible crash in __construct() when using persistent
-	  connections
+		connections
 	* Add work-around a bug in libmemcached < 0.50 that causes truncation
-	  of last character of server key prefix
+		of last character of server key prefix
 	* When using multiple servers implement transparent fail-over
 	* Fix php_memc_cas_impl() implementation when server_key is not being used
 	* Add support for incrementByKey() and decrementByKey()
 	* Make increment/decrement initialize value when it is not available (when
-	  using binary protocol)
+		using binary protocol)
 
 Version 2.0.0b1
 ---------------
 	* Change the return value for non-existing keys to be NULL rather than
-	  'false', affects simple get only
+		'false', affects simple get only
 	* Add fastlz library that provides better/faster payload compression
 	* Add configure switch to enable/disable JSON serialization support
 	* Add getAllKeys() method
@@ -50,7 +50,7 @@ Version 2.0.0b1
 	* Add isPristine() and isPersistent() methods
 	* Add setOptions() method to set multiple options at once
 	* Add SERIALIZER_JSON_ARRAY type that decodes JSON payloads as arrays
-	  instead of objects
+		instead of objects
 	* Add support for Unix domain socket connections
 	* Add memcached.compression_threshold INI setting
 	* Add memcached.compression_factor INI setting
@@ -59,8 +59,8 @@ Version 2.0.0b1
 	* Many bug fixes and memory leaks plugged
 	* Add several more tests
 	* Add constants for libmemcached 0.37+:
-	    - Memcached::OPT_NUMBER_OF_REPLICAS
-	    - Memcached::OPT_RANDOMIZE_REPLICA_READ
+			- Memcached::OPT_NUMBER_OF_REPLICAS
+			- Memcached::OPT_RANDOMIZE_REPLICA_READ
 	* Add 'on_new' callback to constructor
 	* Add SASL support
 
@@ -68,7 +68,7 @@ Version 1.0.1
 -------------
 	* Fix JSON API handling to account for PHP 5.2/5.3 version differences.
 	* Add memcached.sess_locking, memcached.sess_lock_wait, and
-	  memcached.sess_prefix INI entries.
+		memcached.sess_prefix INI entries.
 	* Add OPT_AUTO_EJECT_HOSTS option.
 
 Version 1.0.0
@@ -77,21 +77,21 @@ Version 1.0.0
 	* Add getResultMessage() method.
 	* Fix OPT_RECV_TIMEOUT definition.
 	* Initialize Session lock wait to max execution time (if max execution
-	  time is unlimited, default to 30 seconds).
+		time is unlimited, default to 30 seconds).
 
 Version 0.2.0
 -------------
 	* Add JSON serializer support, requires PHP 5.2.10+.
 	* Add HAVE_JSON and HAVE_IGBINARY class constants that indicate
-	  whether the respective serializers are available.
+		whether the respective serializers are available.
 	* Add 'flags' parameter to getMulti() and getMultiByKey().
 	* Add GET_PRESERVE_ORDER class constant that can be used with
-	  abovementioned flags parameter to make the order of the keys in the
-	  response match the request.
+		abovementioned flags parameter to make the order of the keys in the
+		response match the request.
 	* Fix an issue with retrieving 0-length payloads (FALSE boolean value).
 	* Refactor the way payload types are stored in memcached flags to optimize
-	  the structure and allow for future expansion. WARNING! You have to flush
-	  the cache when upgrading to this version.
+		the structure and allow for future expansion. WARNING! You have to flush
+		the cache when upgrading to this version.
 	* Add several tests.
 
 Version 0.1.5

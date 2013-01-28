@@ -3,7 +3,7 @@ Set options using setOptions
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 $m = new Memcached();
 
 /* existing options */

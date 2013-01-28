@@ -32,32 +32,32 @@ $m->getDelayed(array_keys($data), false, 'myfunc');
 ?>
 --EXPECT--
 array(2) {
-  ["key"]=>
-  string(3) "foo"
-  ["value"]=>
-  string(8) "foo-data"
+	["key"]=>
+	string(3) "foo"
+	["value"]=>
+	string(8) "foo-data"
 }
 array(2) {
-  ["key"]=>
-  string(3) "bar"
-  ["value"]=>
-  string(8) "bar-data"
+	["key"]=>
+	string(3) "bar"
+	["value"]=>
+	string(8) "bar-data"
 }
 array(2) {
-  ["key"]=>
-  string(3) "baz"
-  ["value"]=>
-  string(8) "baz-data"
+	["key"]=>
+	string(3) "baz"
+	["value"]=>
+	string(8) "baz-data"
 }
 array(2) {
-  ["key"]=>
-  string(3) "lol"
-  ["value"]=>
-  string(8) "lol-data"
+	["key"]=>
+	string(3) "lol"
+	["value"]=>
+	string(8) "lol-data"
 }
 array(2) {
-  ["key"]=>
-  string(3) "kek"
-  ["value"]=>
-  string(8) "kek-data"
+	["key"]=>
+	string(3) "kek"
+	["value"]=>
+	string(8) "kek-data"
 }

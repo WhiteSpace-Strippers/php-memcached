@@ -3,7 +3,7 @@ Memcached options
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 $m = new Memcached();
 $m->setOption(Memcached::OPT_SERIALIZER, Memcached::SERIALIZER_PHP);
 

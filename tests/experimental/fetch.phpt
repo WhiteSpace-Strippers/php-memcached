@@ -17,7 +17,7 @@ function simple_compare(array $data, array $actual, $has_cas) {
 		if (isset($item['cas']) && $item['cas'] == 0) {
 			echo "Invalid CAS value: ", $item['cas'], "\n";
 		}
-		
+
 		if ($has_cas and !isset($item['cas'])) {
 			echo "Should have cas but does not.\n";
 			var_dump($item);

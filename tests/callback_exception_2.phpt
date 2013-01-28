@@ -3,7 +3,7 @@ Callback initializer throws and dies
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 
 function init_cb($m, $id) {
 	echo "ran throwing cb\n";

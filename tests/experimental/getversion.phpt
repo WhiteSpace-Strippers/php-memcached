@@ -15,6 +15,6 @@ var_dump($stats);
 --EXPECTF--
 bool(false)
 array(%d) {
-  ["%s:%d"]=>
-  string(%d) "%s"
+	["%s:%d"]=>
+	string(%d) "%s"
 }

@@ -21,12 +21,12 @@ echo $m->getResultMessage(), "\n";
 
 --EXPECT--
 array(3) {
-  ["foo"]=>
-  int(1)
-  ["bar"]=>
-  int(2)
-  ["baz"]=>
-  NULL
+	["foo"]=>
+	int(1)
+	["bar"]=>
+	int(2)
+	["baz"]=>
+	NULL
 }
 SUCCESS
 array(0) {

@@ -16,6 +16,6 @@ var_dump($m->get($key));
 ?>
 --EXPECT--
 array(1) {
-  ["foo"]=>
-  string(3) "bar"
+	["foo"]=>
+	string(3) "bar"
 }

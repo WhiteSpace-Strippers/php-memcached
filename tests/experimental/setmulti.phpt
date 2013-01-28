@@ -36,36 +36,36 @@ var_dump($r === $data);
 
 --EXPECTF--
 Data: array(%d) {
-  ["foo"]=>
-  string(3) "bar"
-  [%i]=>
-  string(7) "int-max"
-  [%i]=>
-  string(7) "int-min"
-  [%i]=>
-  string(7) "int-min"
-  [0]=>
-  string(4) "zero"
-  [123]=>
-  string(11) "onetwothree"
-  [-123]=>
-  string(14) "negonetwothree"
+	["foo"]=>
+	string(3) "bar"
+	[%i]=>
+	string(7) "int-max"
+	[%i]=>
+	string(7) "int-min"
+	[%i]=>
+	string(7) "int-min"
+	[0]=>
+	string(4) "zero"
+	[123]=>
+	string(11) "onetwothree"
+	[-123]=>
+	string(14) "negonetwothree"
 }
 set keys: bool(true)
 get: array(%d) {
-  ["foo"]=>
-  string(3) "bar"
-  [%i]=>
-  string(7) "int-max"
-  [%i]=>
-  string(7) "int-min"
-  [%i]=>
-  string(7) "int-min"
-  [0]=>
-  string(4) "zero"
-  [123]=>
-  string(11) "onetwothree"
-  [-123]=>
-  string(14) "negonetwothree"
+	["foo"]=>
+	string(3) "bar"
+	[%i]=>
+	string(7) "int-max"
+	[%i]=>
+	string(7) "int-min"
+	[%i]=>
+	string(7) "int-min"
+	[0]=>
+	string(4) "zero"
+	[123]=>
+	string(11) "onetwothree"
+	[-123]=>
+	string(14) "negonetwothree"
 }
 Equal: bool(true)

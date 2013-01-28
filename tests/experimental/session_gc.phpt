@@ -1,8 +1,8 @@
 --TEST--
 Session expiration
 --SKIPIF--
-<?php 
-if (!extension_loaded("memcached")) print "skip"; 
+<?php
+if (!extension_loaded("memcached")) print "skip";
 if (!Memcached::HAVE_SESSION) print "skip";
 ?>
 --INI--
@@ -12,7 +12,7 @@ session.save_handler = memcached
 session.gc_maxlifetime = 2
 
 --FILE--
-<?php 
+<?php
 error_reporting(0);
 
 session_start();
@@ -36,13 +36,13 @@ session_write_close();
 
 --EXPECT--
 array(1) {
-  ["foo"]=>
-  int(1)
+	["foo"]=>
+	int(1)
 }
 NULL
 array(1) {
-  ["foo"]=>
-  int(1)
+	["foo"]=>
+	int(1)
 }
 array(0) {
 }

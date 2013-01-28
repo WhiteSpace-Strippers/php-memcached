@@ -54,20 +54,20 @@ if ($keys[2] !== 3) {
 }
 --EXPECT--
 array(2) {
-  ["key"]=>
-  string(3) "foo"
-  ["value"]=>
-  string(8) "foo-data"
+	["key"]=>
+	string(3) "foo"
+	["value"]=>
+	string(8) "foo-data"
 }
 array(2) {
-  ["key"]=>
-  string(3) "bar"
-  ["value"]=>
-  string(8) "bar-data"
+	["key"]=>
+	string(3) "bar"
+	["value"]=>
+	string(8) "bar-data"
 }
 array(2) {
-  ["key"]=>
-  string(1) "3"
-  ["value"]=>
-  string(6) "3-data"
+	["key"]=>
+	string(1) "3"
+	["value"]=>
+	string(6) "3-data"
 }

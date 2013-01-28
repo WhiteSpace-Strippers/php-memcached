@@ -3,7 +3,7 @@ Memcached construct with bad arguments
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 error_reporting(0);
 $m = new Memcached((object)array());
 echo $php_errormsg, "\n";

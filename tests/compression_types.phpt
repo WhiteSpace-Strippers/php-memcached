@@ -22,18 +22,18 @@ function get_compression($name) {
 }
 
 function fetch_with_compression($m, $key, $value, $set_compression = '', $get_compression = '') {
-	
+
 	echo "set=[$set_compression] get=[$get_compression]\n";
-	
+
 	if (!$set_compression) {
 		$m->setOption(Memcached::OPT_COMPRESSION, false);
 	} else {
 		$m->setOption(Memcached::OPT_COMPRESSION, true);
 		$m->setOption(Memcached::OPT_COMPRESSION_TYPE, get_compression($set_compression));
 	}
-	
+
 	$m->set($key, $value, 1800);
-	
+
 	if (!$get_compression) {
 		$m->setOption(Memcached::OPT_COMPRESSION, true);
 	} else {

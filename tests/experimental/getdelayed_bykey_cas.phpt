@@ -34,42 +34,42 @@ $m->getDelayedByKey('kef', array_keys($data), true, 'myfunc');
 ?>
 --EXPECTF--
 array(3) {
-  ["key"]=>
-  string(3) "foo"
-  ["value"]=>
-  string(8) "foo-data"
-  ["cas"]=>
-  float(%d)
+	["key"]=>
+	string(3) "foo"
+	["value"]=>
+	string(8) "foo-data"
+	["cas"]=>
+	float(%d)
 }
 array(3) {
-  ["key"]=>
-  string(3) "bar"
-  ["value"]=>
-  string(8) "bar-data"
-  ["cas"]=>
-  float(%d)
+	["key"]=>
+	string(3) "bar"
+	["value"]=>
+	string(8) "bar-data"
+	["cas"]=>
+	float(%d)
 }
 array(3) {
-  ["key"]=>
-  string(3) "baz"
-  ["value"]=>
-  string(8) "baz-data"
-  ["cas"]=>
-  float(%d)
+	["key"]=>
+	string(3) "baz"
+	["value"]=>
+	string(8) "baz-data"
+	["cas"]=>
+	float(%d)
 }
 array(3) {
-  ["key"]=>
-  string(3) "lol"
-  ["value"]=>
-  string(8) "lol-data"
-  ["cas"]=>
-  float(%d)
+	["key"]=>
+	string(3) "lol"
+	["value"]=>
+	string(8) "lol-data"
+	["cas"]=>
+	float(%d)
 }
 array(3) {
-  ["key"]=>
-  string(3) "kek"
-  ["value"]=>
-  string(8) "kek-data"
-  ["cas"]=>
-  float(%d)
+	["key"]=>
+	string(3) "kek"
+	["value"]=>
+	string(8) "kek-data"
+	["cas"]=>
+	float(%d)
 }

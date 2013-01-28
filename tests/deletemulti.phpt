@@ -15,7 +15,7 @@ function has_all_keys($keys, $array, $check_true = false)
 	foreach ($keys as $key) {
 		if (!isset($array[$key]))
 			return false;
-		
+
 		if ($check_true && $array[$key] !== true)
 			return false;
 	}
@@ -65,9 +65,9 @@ $keys[] = "nothere2";
 $retval = $m->deleteMulti($keys);
 
 foreach ($retval as $key => $value) {
-    if ($value === Memcached::RES_NOTFOUND) {
-        echo "$key NOT FOUND\n";
-    }
+		if ($value === Memcached::RES_NOTFOUND) {
+				echo "$key NOT FOUND\n";
+		}
 }
 
 

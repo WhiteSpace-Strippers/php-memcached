@@ -12,7 +12,7 @@ session.save_path="127.0.0.1:51312"
 session.save_handler = memcached
 
 --FILE--
-<?php 
+<?php
 error_reporting(0);
 function handler($errno, $errstr) {
 	echo "$errstr\n";

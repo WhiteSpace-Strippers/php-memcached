@@ -10,13 +10,13 @@ class Memcached {
 	 */
 
 	const OPT_HASH;
-	
+
 	const OPT_HASH_DEFAULT;
 
 	const HASH_MD5;
 
 	const HASH_CRC;
-	
+
 	const HASH_FNV1_64;
 
 	const HASH_FNV1A_64;
@@ -70,7 +70,7 @@ class Memcached {
 	const OPT_NOREPLY;
 
 	const OPT_VERIFY_KEY;
-	
+
 	const OPT_RANDOMIZE_REPLICA_READS;
 
 
@@ -182,7 +182,7 @@ class Memcached {
 
 
 	public function __construct( $persistent_id = '', $on_new_object_cb = null ) {}
-	
+
 	public function get( $key, $cache_cb = null, &$cas_token = null ) {}
 
 	public function getByKey( $server_key, $key, $cache_cb = null, &$cas_token = null ) {}
@@ -196,14 +196,14 @@ class Memcached {
 	public function getDelayedByKey( $server_key, array $keys, $with_cas = null, $value_cb = null ) {}
 
 	public function fetch( ) {}
-	
+
 	public function fetchAll( ) {}
 
 	public function set( $key, $value, $expiration = 0 ) {}
 
-    public function touch( $key, $expiration = 0 ) {}
+		public function touch( $key, $expiration = 0 ) {}
 
-    public function touchbyKey( $key, $expiration = 0 ) {}
+		public function touchbyKey( $key, $expiration = 0 ) {}
 
 	public function setByKey( $server_key, $key, $value, $expiration = 0 ) {}
 
@@ -244,12 +244,12 @@ class Memcached {
 	public function decrement( $key, $offset = 1) {}
 
 	public function getOption( $option ) {}
-	
+
 	public function setOption( $option, $value ) {}
 
 	public function setOptions( array $options ) {}
 
-	public function addServer( $host, $port,  $weight = 0 ) {}
+	public function addServer( $host, $port,	$weight = 0 ) {}
 
 	public function addServers( array $servers ) {}
 
@@ -260,7 +260,7 @@ class Memcached {
 	public function flush( $delay = 0 ) {}
 
 	public function getStats( ) {}
-	
+
 	public function getVersion( ) {}
 
 	public function getResultCode( ) {}
@@ -275,6 +275,6 @@ class Memcached {
 
 class MemcachedException extends Exception {
 
-	function __construct( $errmsg = "", $errcode  = 0 ) {}
+	function __construct( $errmsg = "", $errcode	= 0 ) {}
 
 }

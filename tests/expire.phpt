@@ -17,10 +17,10 @@ sleep(1);
 $res = $m->touch('will_expire', 2);
 $v = $m->get('will_expire');
 if(!$res || $v != 'foo') {
-  echo "Error touching will_expire for another 2s expiry.\n";
-  var_dump($res);
-  var_dump($m->getResultMessage());
-  var_dump($v);
+	echo "Error touching will_expire for another 2s expiry.\n";
+	var_dump($res);
+	var_dump($m->getResultMessage());
+	var_dump($v);
 }
 
 sleep(3);
@@ -40,7 +40,7 @@ $m->addServer('127.0.0.1', 11211, 1);
 $set = $m->set('will_expire', "foo", 2);
 $v = $m->touch('will_expire');
 if($v !== false) {
-  echo "Touch with text protocol should return false.\n";
+	echo "Touch with text protocol should return false.\n";
 }
 
 echo "OK\n";

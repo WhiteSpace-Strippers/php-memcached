@@ -13,7 +13,7 @@ class testclass {
 $data = array(
 	array('boolean_true', true),
 	array('boolean_false', false),
-	
+
 	array('string', "just a string"),
 	array('string_empty', ""),
 

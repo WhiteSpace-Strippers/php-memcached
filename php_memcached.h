@@ -1,17 +1,17 @@
 /*
-  +----------------------------------------------------------------------+
-  | Copyright (c) 2009 The PHP Group                                     |
-  +----------------------------------------------------------------------+
-  | This source file is subject to version 3.0 of the PHP license,       |
-  | that is bundled with this package in the file LICENSE, and is        |
-  | available through the world-wide-web at the following url:           |
-  | http://www.php.net/license/3_0.txt.                                  |
-  | If you did not receive a copy of the PHP license and are unable to   |
-  | obtain it through the world-wide-web, please send a note to          |
-  | license@php.net so we can mail you a copy immediately.               |
-  +----------------------------------------------------------------------+
-  | Authors: Andrei Zmievski <andrei@php.net>                            |
-  +----------------------------------------------------------------------+
+	+----------------------------------------------------------------------+
+	| Copyright (c) 2009 The PHP Group																		 |
+	+----------------------------------------------------------------------+
+	| This source file is subject to version 3.0 of the PHP license,			 |
+	| that is bundled with this package in the file LICENSE, and is				|
+	| available through the world-wide-web at the following url:					 |
+	| http://www.php.net/license/3_0.txt.																	|
+	| If you did not receive a copy of the PHP license and are unable to	 |
+	| obtain it through the world-wide-web, please send a note to					|
+	| license@php.net so we can mail you a copy immediately.							 |
+	+----------------------------------------------------------------------+
+	| Authors: Andrei Zmievski <andrei@php.net>														|
+	+----------------------------------------------------------------------+
 */
 
 /* $ Id: $ */
@@ -35,7 +35,7 @@ extern zend_module_entry memcached_module_entry;
 #endif
 
 /****************************************
-  Structures and definitions
+	Structures and definitions
 ****************************************/
 enum memcached_serializer {
 	SERIALIZER_PHP = 1,
@@ -53,21 +53,21 @@ enum memcached_serializer {
 
 #if LIBMEMCACHED_WITH_SASL_SUPPORT
 # if defined(HAVE_SASL_SASL_H)
-#  include <sasl/sasl.h>
-#  define HAVE_MEMCACHED_SASL 1
+#	include <sasl/sasl.h>
+#	define HAVE_MEMCACHED_SASL 1
 # endif
 #endif
 
 ZEND_BEGIN_MODULE_GLOBALS(php_memcached)
 #ifdef HAVE_MEMCACHED_SESSION
 	zend_bool sess_locking_enabled;
-	long  sess_lock_wait;
+	long	sess_lock_wait;
 	char* sess_prefix;
 	zend_bool sess_locked;
 	char* sess_lock_key;
-	int   sess_lock_key_len;
+	int	 sess_lock_key_len;
 
-	int   sess_number_of_replicas;
+	int	 sess_number_of_replicas;
 	zend_bool sess_randomize_replica_read;
 	zend_bool sess_remove_failed_enabled;
 	zend_bool sess_consistent_hashing_enabled;
@@ -76,8 +76,8 @@ ZEND_BEGIN_MODULE_GLOBALS(php_memcached)
 	enum memcached_serializer serializer;
 
 	char *compression_type;
-	int   compression_type_real;
-	int   compression_threshold;
+	int	 compression_type_real;
+	int	 compression_threshold;
 
 	double compression_factor;
 #if HAVE_MEMCACHED_SASL

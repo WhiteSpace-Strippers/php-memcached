@@ -3,7 +3,7 @@ Use callback initializer
 --SKIPIF--
 <?php if (!extension_loaded("memcached")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 
 $arg = 'callback_arg';
 $id = 'my_persistent_id';

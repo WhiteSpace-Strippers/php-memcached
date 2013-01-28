@@ -36,20 +36,20 @@ var_dump($m->getMulti($str_keys));
 --EXPECTF--
 set: bool(true)
 delete: array(7) {
-  [1]=>
-  bool(true)
-  [2]=>
-  bool(true)
-  ["foo"]=>
-  bool(true)
-  [3]=>
-  bool(true)
-  [4]=>
-  bool(true)
-  ["kek"]=>
-  bool(true)
-  [5]=>
-  int(%d)
+	[1]=>
+	bool(true)
+	[2]=>
+	bool(true)
+	["foo"]=>
+	bool(true)
+	[3]=>
+	bool(true)
+	[4]=>
+	bool(true)
+	["kek"]=>
+	bool(true)
+	[5]=>
+	int(%d)
 }
 Should be empty / not found: array(0) {
 }

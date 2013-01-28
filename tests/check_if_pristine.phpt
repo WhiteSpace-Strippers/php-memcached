@@ -4,7 +4,7 @@ Check if persistent object is new or an old persistent one
 <?php if (!extension_loaded("memcached")) print "skip";
 ?>
 --FILE--
-<?php 
+<?php
 $m1 = new Memcached('id1');
 $m1->setOption(Memcached::OPT_PREFIX_KEY, "foo_");
 
